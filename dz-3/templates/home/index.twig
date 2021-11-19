@@ -1,0 +1,5 @@
+{% for image in images %}
+    <a methods="post" href="/public/show.php?imageAddress={{ image.address }}">
+        <img src="{{ image.address }}" alt="">
+    </a>
+{% endfor %}
